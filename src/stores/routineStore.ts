@@ -55,6 +55,7 @@ const generateId = (): string => crypto.randomUUID();
 const defaultSettings: AppSettings = {
   discordWebhookUrl: '',
   darkMode: false,
+  colorTheme: 'indigo',
   username: '',
 };
 
