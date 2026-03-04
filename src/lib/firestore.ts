@@ -18,7 +18,7 @@ const defaultData: UserData = {
   reflections: [],
   timeEntries: [],
   keywords: [],
-  settings: { discordWebhookUrl: '', darkMode: false, username: '' },
+  settings: { discordWebhookUrl: '', darkMode: false, colorTheme: 'indigo', username: '' },
   updatedAt: new Date().toISOString(),
 };
 

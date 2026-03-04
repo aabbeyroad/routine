@@ -84,7 +84,7 @@ export default function RoutineForm({ routine, onClose }: Props) {
 
   const handleSubmit = () => {
     if (!name.trim()) return;
-    const data = { name: name.trim(), icon: icon || undefined, doneGoal: doneGoal.trim(), moreGoal: moreGoal.trim(), maxGoal: maxGoal.trim(), keywords: selectedKeywords };
+    const data = { name: name.trim(), icon: icon || '', color: routine?.color || '', doneGoal: doneGoal.trim(), moreGoal: moreGoal.trim(), maxGoal: maxGoal.trim(), keywords: selectedKeywords };
     if (routine) { updateRoutine(routine.id, data); } else { addRoutine(data); }
     onClose();
   };
